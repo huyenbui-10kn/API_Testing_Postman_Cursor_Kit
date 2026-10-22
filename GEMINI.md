@@ -26,7 +26,7 @@
 
 ### 🔄 Thứ Tự Debug Bắt Buộc (Playwright MCP)
 
-Khi dùng Playwright MCP để debug UI, **LUÔN** tuân theo thứ tự:
+Sử dụng các tool automation **LUÔN** tuân theo thứ tự:
 
 ```
 navigate → resize(1920×1080) → wait_for(page_load) → snapshot → interact → screenshot(on_fail)
@@ -79,6 +79,7 @@ Test chỉ được coi là **hoàn thành** khi đáp ứng **toàn bộ** các
 - [ ] Không để lại commented-out code
 - [ ] Không có `waitForTimeout` / `Thread.sleep` hardcoded
 - [ ] Không có test data hardcoded (email, username, ID phải random/traceable)
+- [ ] Xóa toàn bộ file thừa file rác sinh ra trong quá trình xử lý 
 
 #### 🏗️ Cấu trúc & POM
 
